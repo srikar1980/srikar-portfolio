@@ -5,6 +5,10 @@ import Header from "@/components/Header/Header";
 import Hero from "@/components/Hero/Hero";
 import Projects from "@/components/Projects/Projects";
 import TechStack from "@/components/TechStack/TechStack";
+import Footer from "@/components/Footer/Footer";
+import BackToTop from "@/components/BackToTop/BackToTop";
+import StickySocialBar from "@/components/StickySocialBar/StickySocialBar";
+
 
 export default function Home() {
   return (
@@ -16,6 +20,9 @@ export default function Home() {
       <Experience />
       <Projects />
 <Education />
+<Footer />
+<BackToTop />
+<StickySocialBar />
     </>
   );
 }

@@ -10,19 +10,19 @@ export const portfolioData = {
 
   socialLinks: {
     github: "https://github.com/srikar1980",
-    linkedin: "YOUR_LINKEDIN_URL",
+    linkedin: "https://www.linkedin.com/in/srikar-ravoori/",
     email: "mailto:srikar.ravoori@gmail.com",
   },
 
   cta: {
     projects: "#projects",
-    contact: "#contact",
+    experience: "#experience",
   },
   education: [
   {
     degree: "B.Sc. Computer Science",
     institution: "Kakatiya University",
-    year: "2018 - 2021",
+    year: "2001 - 2003",
   },
 ],
 

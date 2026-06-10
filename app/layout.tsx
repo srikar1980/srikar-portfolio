@@ -15,10 +15,11 @@ const merriweather = Merriweather({
 });
 
 export const metadata: Metadata = {
-  title: "Srikar Ravoori | Frontend Developer",
+  title: "Srikar Ravoori | Full Stack Developer",
   description:
-    "Portfolio showcasing projects, skills and experience.",
+    "Full Stack Developer with 4.5+ years of experience in React.js, Next.js, MERN Stack, Fintech and SaaS applications.",
 };
+
 export default function RootLayout({
   children,
 }: Readonly<{
@@ -26,10 +27,10 @@ export default function RootLayout({
 }>) {
   return (
     <html
-  lang="en"
-  className={`${poppins.variable} ${merriweather.variable}`}
->
-  <body>{children}</body>
-</html>
+      lang="en"
+      className={`${poppins.variable} ${merriweather.variable}`}
+    >
+      <body>{children}</body>
+    </html>
   );
 }

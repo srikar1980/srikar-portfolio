@@ -31,10 +31,10 @@ export default function Hero() {
             </Link>
 
             <Link
-              href={cta.contact}
+              href={cta.experience}
               className={`${styles.btn} ${styles.btnSecondary}`}
             >
-              Contact Me
+              Experience
             </Link>
           </div>
 

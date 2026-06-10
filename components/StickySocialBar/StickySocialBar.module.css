@@ -1,0 +1,75 @@
+.socialBar {
+  position: fixed;
+  right: 0;          /* 👈 move to right */
+  top: 50%;
+  transform: translateY(-50%);
+
+  display: flex;
+  flex-direction: column;
+  gap: 1rem;
+
+  z-index: 999;
+  align-items: flex-end; /* important for right-side alignment */
+}
+
+.socialLink {
+   transition: width 0.3s ease, background 0.3s ease;
+  width: 5rem;
+  height: 5rem;
+
+  display: flex;
+  align-items: center;
+
+  overflow: hidden;
+  transition: width 0.3s ease;
+
+  color: var(--white);
+  text-decoration: none;
+
+  border-radius: 8px 0 0 8px; /* 👈 flipped corners for right side */
+
+  box-shadow: var(--box-shadow);
+
+  justify-content: flex-start;
+}
+
+/* expand ONLY hovered item */
+.socialLink:hover {
+  width: 20rem;
+}
+
+/* icon stays fixed size */
+.socialLink svg {
+  min-width: 5rem;
+  font-size: 2rem;
+  margin-inline: 0;
+}
+
+/* text smoothly appears */
+.socialLink span {
+  white-space: nowrap;
+  font-size: 1.4rem;
+  font-weight: 500;
+
+  padding-left: 1rem;
+}
+
+/* Colors */
+.github {
+  background: #171515;
+}
+
+.linkedin {
+  background: var(--blue);
+}
+
+.email {
+  background: var(--orange);
+}
+
+/* Mobile hide */
+@media (max-width: 768px) {
+  .socialBar {
+    display: none;
+  }
+}

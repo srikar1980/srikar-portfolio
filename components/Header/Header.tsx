@@ -1,7 +1,8 @@
 "use client";
 
-import { useEffect,useState } from "react";
 import Link from "next/link";
+import { useEffect, useState } from "react";
+import { FaPhoneAlt } from "react-icons/fa";
 import { FaBars, FaXmark } from "react-icons/fa6";
 import styles from "./Header.module.css";
 
@@ -31,11 +32,18 @@ export default function Header() {
   return (
     <header className={styles.header}>
       <nav className={`container ${styles.navbar}`}>
-        <div className={styles.logo}>
-          <Link href="/">
-            Srikar <span>Ravoori</span>
-          </Link>
-        </div>
+        <div className={styles.logoSection}>
+  <div className={styles.logo}>
+    <Link href="/">
+      Srikar <span>Ravoori</span>
+    </Link>
+  </div>
+
+  <a href="tel:+919948800149" className={styles.contact}>
+    <FaPhoneAlt />
+    <span>+91 99488 00149</span>
+  </a>
+</div>
 
         <button
           className={styles.hamburger}
