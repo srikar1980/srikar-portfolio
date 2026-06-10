@@ -1,0 +1,35 @@
+.educationSection {
+  background: var(--gray-9);
+}
+
+.educationGrid {
+  max-width: 600px;
+  margin: 0 auto;
+}
+
+.educationCard {
+  background: var(--dark);
+
+  padding: 3rem;
+
+  border-left: 4px solid var(--orange);
+
+  border-radius: 1rem;
+
+  box-shadow: var(--box-shadow);
+
+  text-align: center;
+}
+
+.educationCard h3 {
+  margin-bottom: 1rem;
+}
+
+.educationCard p {
+  margin-bottom: 1rem;
+}
+
+.educationCard span {
+  color: var(--blue);
+  font-weight: 600;
+}

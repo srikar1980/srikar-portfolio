@@ -1,0 +1,61 @@
+.projectsSection {
+  background: var(--dark);
+}
+
+.projectsGrid {
+  display: grid;
+
+  grid-template-columns:
+    repeat(auto-fit, minmax(320px, 1fr));
+
+  gap: 2rem;
+}
+
+.projectCard {
+  background: var(--gray-9);
+
+  padding: 2.5rem;
+
+  border-radius: 1.2rem;
+
+  box-shadow: var(--box-shadow);
+
+  transition: all 0.3s ease;
+}
+
+.projectCard:hover {
+  transform: translateY(-6px);
+}
+
+.category {
+  color: var(--blue);
+
+  font-size: 1.3rem;
+  font-weight: 600;
+}
+
+.projectCard h3 {
+  margin: 1rem 0;
+}
+
+.projectCard p {
+  margin-bottom: 2rem;
+}
+
+.techList {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 1rem;
+}
+
+.techTag {
+  background: rgba(255, 122, 24, 0.15);
+
+  color: var(--orange);
+
+  padding: 0.6rem 1.2rem;
+
+  border-radius: 2rem;
+
+  font-size: 1.2rem;
+}
