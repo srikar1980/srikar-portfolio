@@ -1,0 +1,42 @@
+.techStackSection {
+  background: var(--dark);
+}
+
+.techGrid {
+  display: grid;
+
+  grid-template-columns:
+    repeat(auto-fit, minmax(180px, 1fr));
+
+  gap: 2rem;
+}
+
+.techCard {
+  background: var(--gray-9);
+
+  padding: 2.5rem 2rem;
+
+  border-radius: 1.2rem;
+
+  text-align: center;
+
+  box-shadow: var(--box-shadow);
+
+  transition: all 0.3s ease;
+}
+
+.techCard:hover {
+  transform: translateY(-6px);
+}
+
+.icon {
+  font-size: 4rem;
+  color: var(--orange);
+
+  margin-bottom: 1.5rem;
+}
+
+.techCard h3 {
+  font-size: 1.6rem;
+  color: var(--white);
+}

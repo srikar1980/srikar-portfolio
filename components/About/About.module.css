@@ -1,0 +1,15 @@
+.aboutSection {
+  background: var(--gray-9);
+}
+
+.aboutContent {
+  max-width: 800px;
+  margin-inline: auto;
+  text-align: center;
+}
+
+.aboutContent p {
+  margin-bottom: 2rem;
+  font-size: 1.6rem;
+  line-height: 1.9;
+}
