@@ -37,3 +37,15 @@
 .button:hover {
   transform: translateY(-4px);
 }
+
+@media (max-width: 600px) {
+  .button {
+
+  right: 2.5rem;
+  bottom: 2rem;
+
+  width: 35px;
+  height: 35px;
+  }
+
+}
