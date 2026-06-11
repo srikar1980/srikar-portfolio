@@ -12,11 +12,10 @@ export default function Header() {
   const navItems = [
     { label: "Home", href: "#home" },
     { label: "About", href: "#about" },
-    { label: "Tech Stack", href: "#techstack" },
+    { label: "Tech Stack", href: "#tech-stack" },
     { label: "Experience", href: "#experience" },
     { label: "Projects", href: "#projects" },
     { label: "Education", href: "#education" },
-    { label: "Contact", href: "#contact" },
   ];
 
   const closeMenu = () => setMenuOpen(false);

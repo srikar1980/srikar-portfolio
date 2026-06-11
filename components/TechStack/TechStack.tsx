@@ -2,6 +2,7 @@ import styles from "./TechStack.module.css";
 import SectionTitle from "@/components/SectionTitle/SectionTitle";
 
 import {
+  FaAws ,
   FaReact,
   FaNodeJs,
   FaGithub,
@@ -38,7 +39,7 @@ const technologies = [
   { name: "CSS3", icon: <FaCss3Alt /> },
   { name: "Git", icon: <FaGitAlt /> },
   { name: "GitHub", icon: <FaGithub /> },
-  { name: "Bitbucket", icon: <SiBitbucket /> },
+  { name: "AWS", icon: <FaAws /> },
 ];
 
 export default function TechStack() {

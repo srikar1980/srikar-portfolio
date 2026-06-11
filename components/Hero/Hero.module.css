@@ -52,6 +52,10 @@
   margin-bottom: 3rem;
 }
 
+.downloadIcon {
+  margin-right: 0.6rem;
+}
+
 .btn {
   display: inline-flex;
   align-items: center;

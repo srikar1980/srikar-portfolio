@@ -1,8 +1,8 @@
 import Link from "next/link";
-import { FaGithub, FaLinkedin, FaEnvelope } from "react-icons/fa";
+import { FaDownload, FaEnvelope, FaGithub, FaLinkedin } from "react-icons/fa";
 
-import styles from "./Hero.module.css";
 import { portfolioData } from "@/data/portfolioData";
+import styles from "./Hero.module.css";
 
 export default function Hero() {
   const { name, role, tagline, summary, socialLinks, cta } = portfolioData;
@@ -30,12 +30,20 @@ export default function Hero() {
               View Projects
             </Link>
 
-            <Link
+            <a
+  href="/Srikar_Ravoori_FullStack_Developer_4Y.pdf"
+  download
+  className={`${styles.btn} ${styles.btnSecondary}`}
+>
+  <FaDownload className={styles.downloadIcon} />Resume
+</a>
+
+            {/* <Link
               href={cta.experience}
               className={`${styles.btn} ${styles.btnSecondary}`}
             >
               Experience
-            </Link>
+            </Link> */}
           </div>
 
           <div className={styles.socialLinks}>
