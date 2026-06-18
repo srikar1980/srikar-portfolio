@@ -1,5 +1,5 @@
-import styles from "./About.module.css";
 import SectionTitle from "@/components/SectionTitle/SectionTitle";
+import styles from "./About.module.css";
 
 export default function About() {
   return (
@@ -15,7 +15,7 @@ export default function About() {
 
         <div className={styles.aboutContent}>
           <p>
-            Full Stack Developer with 4.5+ years of experience building
+            Frontend Developer with 4.5+ years of experience building
             scalable fintech and SaaS applications using React.js, Next.js,
             Node.js, Express.js, and MongoDB.
           </p>

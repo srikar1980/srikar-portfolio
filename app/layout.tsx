@@ -17,7 +17,7 @@ const merriweather = Merriweather({
 export const metadata: Metadata = {
   title: "Srikar Ravoori | Full Stack Developer",
   description:
-    "Full Stack Developer with 4.5+ years of experience in React.js, Next.js, MERN Stack, Fintech and SaaS applications.",
+    "Frontend Developer with 4.5+ years of experience in React.js, Next.js, Redux ToolKit, Fintech and SaaS applications.",
 };
 
 export default function RootLayout({
