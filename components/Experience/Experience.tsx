@@ -1,10 +1,10 @@
-import styles from "./Experience.module.css";
 import SectionTitle from "@/components/SectionTitle/SectionTitle";
+import styles from "./Experience.module.css";
 
 const experiences = [
   {
     company: "Webile Apps (India) Pvt Ltd",
-    duration: "Aug 2024 - Present",
+    duration: "Aug 2024 - May 2026",
     project: "Mutual Fund Platform (Fintech)",
     points: [
       "Developed transaction-heavy modules including SIP, STP, SWP and purchase flows.",

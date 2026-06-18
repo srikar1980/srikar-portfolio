@@ -1,12 +1,12 @@
 export const portfolioData = {
   name: "Srikar Ravoori",
 
-  role: "Full Stack Developer",
+  role: "Frontend Developer",
 
-  tagline: "React.js | Next.js | MERN Stack",
+  tagline: "React.js | Next.js | Javascript",
 
   summary:
-    "Full Stack Developer with 4.5+ years of experience building scalable fintech and SaaS applications. Specialized in React.js, Next.js, and MERN stack development with a strong focus on performance optimization, reusable architecture, and delivering business-driven solutions.",
+    "Frontend Developer with 4.5+ years of experience building scalable fintech and SaaS applications. Specialized in React.js, Next.js with a strong focus on performance optimization, reusable architecture, and delivering business-driven solutions.",
 
   socialLinks: {
     github: "https://github.com/srikar1980",
@@ -67,7 +67,7 @@ projects: [
   experience: [
   {
     company: "Webile Apps (India) Pvt Ltd",
-    duration: "Aug 2024 - Present",
+    duration: "Aug 2024 - May 2026",
     project: "Mutual Fund Platform (Fintech)",
     points: [
       "Developed transaction-heavy modules including SIP, STP, SWP and purchase flows.",

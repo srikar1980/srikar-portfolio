@@ -31,7 +31,7 @@ export default function Hero() {
             </Link>
 
             <a
-  href="/Srikar_Ravoori_FullStack_Developer_4Y.pdf"
+  href="/SrikarRavoori_FrontendDeveloper_Resume.pdf"
   download
   className={`${styles.btn} ${styles.btnSecondary}`}
 >
