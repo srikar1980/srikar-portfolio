@@ -8,10 +8,7 @@ export default function Hero() {
   const { name, role, tagline, summary, socialLinks, cta } = portfolioData;
 
   return (
-    <section
-      id="home"
-      className={styles.heroSection}
-    >
+    <section id="home" className={styles.heroSection}>
       <div className={`container ${styles.heroContent}`}>
         <div className={styles.heroLeft}>
           <h1>{name}</h1>
@@ -31,12 +28,13 @@ export default function Hero() {
             </Link>
 
             <a
-  href="/SrikarRavoori_FrontendDeveloper_Resume.pdf"
-  download
-  className={`${styles.btn} ${styles.btnSecondary}`}
->
-  <FaDownload className={styles.downloadIcon} />Resume
-</a>
+              href="/SrikarRavoori_FrontendResume.pdf"
+              download
+              className={`${styles.btn} ${styles.btnSecondary}`}
+            >
+              <FaDownload className={styles.downloadIcon} />
+              Resume
+            </a>
 
             {/* <Link
               href={cta.experience}
