@@ -4,9 +4,18 @@ import styles from "./Education.module.css";
 
 export default function Education() {
   return (
-    <section id="education" className={styles.educationSection}>
+    <section
+      id="education"
+      className={styles.educationSection}
+      aria-labelledby="education-heading"
+      tabIndex={-1}
+    >
       <div className="container">
-        <SectionTitle title="Education" subtitle="Academic background" />
+        <SectionTitle
+          title="Education"
+          subtitle="Academic background"
+          headingId="education-heading"
+        />
 
         <div className={styles.educationGrid}>
           {portfolioData.education.map((item) => (
@@ -15,7 +24,7 @@ export default function Education() {
 
               <p>{item.institution}</p>
 
-              {/* <span>{item.year}</span> */}
+              <span>{item.year}</span>
             </div>
           ))}
         </div>

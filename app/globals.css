@@ -1,11 +1,7 @@
 @import "tailwindcss";
 
-/* ==================================================
-   ROOT VARIABLES
-================================================== */
-
 :root {
-  --blue: #0089c7;
+  --blue: #37b6e8;
   --orange: #ff7a18;
 
   --light-orange: #fff2df;
@@ -40,6 +36,7 @@ body {
   background-color: var(--gray-9);
   color: var(--white);
 
+  font-family: var(--font-primary);
   font-size: 1.5rem;
   line-height: 1.7;
 
@@ -67,6 +64,11 @@ textarea {
   font: inherit;
 }
 
+:focus-visible {
+  outline: 3px solid var(--orange);
+  outline-offset: 3px;
+}
+
 .container {
   max-width: var(--container-width);
   margin-inline: auto;
@@ -75,6 +77,7 @@ textarea {
 
 section {
   padding: var(--section-padding);
+  scroll-margin-top: 9rem;
 }
 
 h1,
@@ -88,15 +91,94 @@ p {
   color: var(--text-muted);
 }
 
-body {
-  background-color: var(--gray-9);
-  color: var(--white);
-
-  font-family: var(--font-primary);
-
-  font-size: 1.5rem;
-  line-height: 1.7;
-
-  overflow-x: hidden;
+.skipLink {
+  position: absolute;
+  width: 1px;
+  height: 1px;
+  padding: 0;
+  margin: -1px;
+  overflow: hidden;
+  clip: rect(0, 0, 0, 0);
+  white-space: nowrap;
+  clip-path: inset(50%);
+  border: 0;
+  top: 1rem;
+  left: 1rem;
+  z-index: 3000;
+  border-radius: 0.5rem;
+  background: var(--white);
+  color: var(--dark);
+  font-weight: 700;
 }
 
+.skipLink:focus {
+  position: fixed;
+  width: auto;
+  height: auto;
+  padding: 1rem 1.5rem;
+  margin: 0;
+  overflow: visible;
+  clip: auto;
+  white-space: normal;
+  clip-path: none;
+}
+
+.sectionLoader {
+  position: fixed;
+  inset: 0;
+  z-index: 2000;
+  display: grid;
+  place-items: center;
+  background: rgba(30, 30, 30, 0.94);
+  color: var(--white);
+  opacity: 0;
+  visibility: hidden;
+  pointer-events: none;
+  transition:
+    opacity 0.25s ease,
+    visibility 0.25s ease;
+}
+
+.sectionLoaderVisible {
+  opacity: 1;
+  visibility: visible;
+}
+
+.sectionLoaderContent {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 1.5rem;
+  font-size: 1.6rem;
+  font-weight: 600;
+}
+
+.sectionLoaderSpinner {
+  width: 5rem;
+  height: 5rem;
+  border: 0.5rem solid rgba(255, 255, 255, 0.25);
+  border-top-color: var(--orange);
+  border-radius: 50%;
+  animation: sectionLoaderSpin 0.9s linear infinite;
+}
+
+@keyframes sectionLoaderSpin {
+  to {
+    transform: rotate(360deg);
+  }
+}
+
+@media (prefers-reduced-motion: reduce) {
+  html {
+    scroll-behavior: auto;
+  }
+
+  *,
+  *::before,
+  *::after {
+    animation-duration: 0.01ms !important;
+    animation-iteration-count: 1 !important;
+    scroll-behavior: auto !important;
+    transition-duration: 0.01ms !important;
+  }
+}

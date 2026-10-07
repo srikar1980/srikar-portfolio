@@ -1,6 +1,6 @@
-import Link from "next/link";
 import { FaDownload, FaEnvelope, FaGithub, FaLinkedin } from "react-icons/fa";
 
+import SectionLink from "@/components/SectionLink/SectionLink";
 import { portfolioData } from "@/data/portfolioData";
 import styles from "./Hero.module.css";
 
@@ -8,10 +8,15 @@ export default function Hero() {
   const { name, role, tagline, summary, socialLinks, cta } = portfolioData;
 
   return (
-    <section id="home" className={styles.heroSection}>
+    <section
+      id="home"
+      className={styles.heroSection}
+      aria-labelledby="home-heading"
+      tabIndex={-1}
+    >
       <div className={`container ${styles.heroContent}`}>
         <div className={styles.heroLeft}>
-          <h1>{name}</h1>
+          <h1 id="home-heading">{name}</h1>
 
           <h2 className={styles.heroRole}>{role}</h2>
 
@@ -20,28 +25,24 @@ export default function Hero() {
           <p>{summary}</p>
 
           <div className={styles.heroButtons}>
-            <Link
+            <SectionLink
               href={cta.projects}
               className={`${styles.btn} ${styles.btnPrimary}`}
             >
               View Projects
-            </Link>
+            </SectionLink>
 
             <a
-              href="/SrikarRavoori_FrontendResume.pdf"
+              href="/SrikarRavoori_Resume_Latest.pdf"
               download
               className={`${styles.btn} ${styles.btnSecondary}`}
             >
-              <FaDownload className={styles.downloadIcon} />
+              <FaDownload
+                className={styles.downloadIcon}
+                aria-hidden="true"
+              />
               Resume
             </a>
-
-            {/* <Link
-              href={cta.experience}
-              className={`${styles.btn} ${styles.btnSecondary}`}
-            >
-              Experience
-            </Link> */}
           </div>
 
           <div className={styles.socialLinks}>
@@ -50,7 +51,7 @@ export default function Hero() {
               target="_blank"
               rel="noopener noreferrer"
             >
-              <FaGithub />
+              <FaGithub aria-hidden="true" />
               GitHub
             </a>
 
@@ -59,12 +60,12 @@ export default function Hero() {
               target="_blank"
               rel="noopener noreferrer"
             >
-              <FaLinkedin />
+              <FaLinkedin aria-hidden="true" />
               LinkedIn
             </a>
 
             <a href={socialLinks.email}>
-              <FaEnvelope />
+              <FaEnvelope aria-hidden="true" />
               Email
             </a>
           </div>

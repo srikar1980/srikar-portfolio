@@ -1,5 +1,6 @@
 "use client";
 
+import { portfolioData } from "@/data/portfolioData";
 import styles from "./StickySocialBar.module.css";
 
 import {
@@ -10,37 +11,39 @@ import {
 
 export default function StickySocialBar() {
   return (
-    <div className={styles.socialBar}>
+    <nav className={styles.socialBar} aria-label="Social links">
       <a
-        href="https://github.com/srikar1980"
+        href={portfolioData.socialLinks.github}
         target="_blank"
         rel="noopener noreferrer"
         className={`${styles.socialLink} ${styles.github}`}
+        aria-label="GitHub profile (opens in a new tab)"
       >
-        <FaGithub />
+        <FaGithub aria-hidden="true" />
 
         <span>GitHub</span>
       </a>
 
       <a
-        href="https://www.linkedin.com/in/srikar-ravoori/"
+        href={portfolioData.socialLinks.linkedin}
         target="_blank"
         rel="noopener noreferrer"
         className={`${styles.socialLink} ${styles.linkedin}`}
+        aria-label="LinkedIn profile (opens in a new tab)"
       >
-        <FaLinkedinIn />
+        <FaLinkedinIn aria-hidden="true" />
 
         <span>LinkedIn</span>
       </a>
 
       <a
-        href="mailto:srikar.ravoori@gmail.com"
+        href={portfolioData.socialLinks.email}
         className={`${styles.socialLink} ${styles.email}`}
       >
-        <FaEnvelope />
+        <FaEnvelope aria-hidden="true" />
 
         <span>Email Me</span>
       </a>
-    </div>
+    </nav>
   );
 }

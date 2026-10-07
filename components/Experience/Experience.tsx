@@ -1,4 +1,5 @@
 import SectionTitle from "@/components/SectionTitle/SectionTitle";
+
 import styles from "./Experience.module.css";
 
 const experiences = [
@@ -16,14 +17,15 @@ const experiences = [
   },
 
   {
-    company: "GAC Digital Pvt Ltd",
-    duration: "Apr 2021 - Jan 2024",
-    project: "GAC Portal & BYT SaaS Platform",
+    company: "SchoolRefine",
+    duration: "MERN Stack Project",
+    project: "School Management ERP",
     points: [
-      "Developed modules for timesheets, payslips and employee operations.",
-      "Migrated legacy class components to React Hooks.",
-      "Built onboarding, project tracking and billing automation features.",
-      "Implemented invoice generation and time tracking workflows.",
+      "Developed a full-stack school management ERP using MongoDB, Express.js, React and Node.js.",
+      "Built modules for academics, student management, finance and administrative workflows.",
+      "Implemented reusable React components with Redux Toolkit for state management.",
+      "Developed REST APIs using Express.js with MongoDB for secure and structured data management.",
+      "Designed the application with school-level data isolation and role-based access control.",
     ],
   },
 
@@ -45,24 +47,22 @@ export default function Experience() {
     <section
       id="experience"
       className={styles.experienceSection}
+      aria-labelledby="experience-heading"
+      tabIndex={-1}
     >
       <div className="container">
         <SectionTitle
           title="Experience"
+          headingId="experience-heading"
           subtitle="Professional journey and key contributions"
         />
 
         <div className={styles.timeline}>
           {experiences.map((item) => (
-            <div
-              key={item.company}
-              className={styles.card}
-            >
+            <div key={item.company} className={styles.card}>
               <h3>{item.company}</h3>
 
-              <span className={styles.duration}>
-                {item.duration}
-              </span>
+              <span className={styles.duration}>{item.duration}</span>
 
               <h4>{item.project}</h4>
 

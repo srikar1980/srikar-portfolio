@@ -1,14 +1,11 @@
 .heroSection {
   min-height: 100vh;
-
+  min-height: 100svh;
   display: flex;
   align-items: center;
-
   background-image:
-    linear-gradient(rgba(0, 0, 0, 0.6),
-      rgba(0, 0, 0, 0.6)),
+    linear-gradient(90deg, rgba(0, 0, 0, 0.78), rgba(0, 0, 0, 0.42)),
     url("/images/hero/hero-background.jpg");
-
   background-size: cover;
   background-position: center;
   background-repeat: no-repeat;
@@ -17,39 +14,54 @@
 .heroContent {
   display: grid;
   align-items: center;
+  width: 100%;
 }
 
 .heroLeft {
-  max-width: 70rem;
+  max-width: 76rem;
 }
 
 .heroLeft h1 {
-  font-size: 5rem;
-  margin-bottom: 1rem;
+  max-width: 14ch;
+  margin-bottom: 1.2rem;
+  font-size: clamp(4.2rem, 7vw, 7.2rem);
+  line-height: 1.08;
+  letter-spacing: -0.04em;
+  text-wrap: balance;
 }
 
 .heroRole {
+  margin-bottom: 1.2rem;
   color: var(--blue);
-  font-size: 2.4rem;
-  margin-bottom: 1rem;
+  font-size: clamp(2rem, 3vw, 2.8rem);
 }
 
 .heroTagline {
-  color: var(--orange);
-  font-weight: 600;
+  display: inline-block;
   margin-bottom: 2rem;
+  padding: 0.5rem 1rem;
+  border-left: 3px solid var(--orange);
+  background: rgba(30, 30, 30, 0.68);
+  color: #ffb36e;
+  font-weight: 600;
 }
 
 .heroLeft p {
+  max-width: 66ch;
   margin-bottom: 2rem;
+}
+
+.heroLeft p:not(.heroTagline) {
+  font-size: 1.7rem;
+  line-height: 1.8;
 }
 
 .heroButtons {
   display: flex;
+  align-items: center;
   gap: 1.5rem;
   flex-wrap: wrap;
-
-  margin-bottom: 3rem;
+  margin: 3rem 0;
 }
 
 .downloadIcon {
@@ -59,29 +71,31 @@
 .btn {
   display: inline-flex;
   align-items: center;
-
+  justify-content: center;
+  min-height: 4.8rem;
   padding: 1.2rem 2.4rem;
-
   border-radius: 0.8rem;
-
   font-size: 1.4rem;
   font-weight: 600;
-
-  transition: all 0.3s ease;
+  transition:
+    transform 0.2s ease,
+    background-color 0.2s ease,
+    color 0.2s ease;
 }
 
 .btnPrimary {
   background: var(--orange);
-  color: var(--white);
+  color: var(--dark);
 }
 
 .btnPrimary:hover {
   transform: translateY(-3px);
-  background: #e06a10;
+  background: #ff9a4a;
 }
 
 .btnSecondary {
   border: 2px solid var(--white);
+  background: rgba(30, 30, 30, 0.5);
 }
 
 .btnSecondary:hover {
@@ -99,10 +113,9 @@
   display: flex;
   align-items: center;
   gap: 0.8rem;
-
+  min-height: 4.4rem;
+  padding: 0.6rem 0.4rem;
   border-bottom: 2px solid var(--orange);
-  padding-bottom: 0.3rem;
-
   transition: color 0.3s ease;
 }
 
@@ -111,16 +124,22 @@
 }
 
 @media (max-width: 768px) {
+  .heroSection {
+    background-image:
+      linear-gradient(rgba(0, 0, 0, 0.72), rgba(0, 0, 0, 0.72)),
+      url("/images/hero/hero-background.jpg");
+  }
+
   .heroContent {
     text-align: center;
   }
 
-  .heroLeft h1 {
-    font-size: 3.6rem;
+  .heroLeft {
+    margin-inline: auto;
   }
 
-  .heroRole {
-    font-size: 2rem;
+  .heroLeft h1 {
+    margin-inline: auto;
   }
 
   .heroButtons {
@@ -129,5 +148,20 @@
 
   .socialLinks {
     justify-content: center;
+  }
+}
+
+@media (max-width: 480px) {
+  .heroSection {
+    min-height: auto;
+  }
+
+  .heroButtons {
+    gap: 1rem;
+  }
+
+  .btn {
+    flex: 1 1 16rem;
+    padding-inline: 1.5rem;
   }
 }

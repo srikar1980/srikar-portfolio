@@ -4,8 +4,8 @@
   right: 2rem;
   bottom: 2rem;
 
-  width: 50px;
-  height: 50px;
+  width: 32px;
+  height: 32px;
 
   border: none;
   border-radius: 50%;
@@ -13,7 +13,7 @@
   padding: 0;
 
   background: var(--orange);
-  color: white;
+  color: var(--dark);
 
   display: flex;
   align-items: center;
@@ -44,8 +44,8 @@
   right: 2.5rem;
   bottom: 2rem;
 
-  width: 35px;
-  height: 35px;
+  width: 26px;
+  height: 26px;
   }
 
 }

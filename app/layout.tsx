@@ -1,5 +1,6 @@
 import type { Metadata } from "next";
 import { Merriweather, Poppins } from "next/font/google";
+import SectionNavigation from "@/components/SectionNavigation/SectionNavigation";
 import "./globals.css";
 
 const poppins = Poppins({
@@ -30,7 +31,9 @@ export default function RootLayout({
       lang="en"
       className={`${poppins.variable} ${merriweather.variable}`}
     >
-      <body>{children}</body>
+      <body>
+        <SectionNavigation>{children}</SectionNavigation>
+      </body>
     </html>
   );
 }

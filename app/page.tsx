@@ -9,20 +9,21 @@ import Footer from "@/components/Footer/Footer";
 import BackToTop from "@/components/BackToTop/BackToTop";
 import StickySocialBar from "@/components/StickySocialBar/StickySocialBar";
 
-
 export default function Home() {
   return (
     <>
       <Header />
-      <Hero />
-      <About />
-      <TechStack />
-      <Experience />
-      <Projects />
-<Education />
-<Footer />
-<BackToTop />
-<StickySocialBar />
+      <main id="main-content" tabIndex={-1}>
+        <Hero />
+        <About />
+        <TechStack />
+        <Experience />
+        <Projects />
+        <Education />
+      </main>
+      <Footer />
+      <BackToTop />
+      <StickySocialBar />
     </>
   );
 }

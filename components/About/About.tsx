@@ -6,10 +6,13 @@ export default function About() {
     <section
       id="about"
       className={styles.aboutSection}
+      aria-labelledby="about-heading"
+      tabIndex={-1}
     >
       <div className="container">
         <SectionTitle
           title="About Me"
+          headingId="about-heading"
           subtitle="A quick overview of my professional journey"
         />
 

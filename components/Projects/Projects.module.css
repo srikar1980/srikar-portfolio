@@ -12,11 +12,15 @@
 }
 
 .projectCard {
+  display: block;
   background: var(--gray-9);
 
   padding: 2.5rem;
 
   border-radius: 1.2rem;
+
+  color: inherit;
+  text-decoration: none;
 
   box-shadow: var(--box-shadow);
 
@@ -25,6 +29,45 @@
 
 .projectCard:hover {
   transform: translateY(-6px);
+}
+
+.projectCard:focus-visible {
+  outline: 2px solid var(--blue);
+  outline-offset: 4px;
+}
+
+.featuredProjectCard {
+  border: 1px solid var(--orange);
+  background:
+    linear-gradient(145deg, rgba(255, 122, 24, 0.12), transparent 55%),
+    var(--gray-9);
+  box-shadow: 0 0 2.4rem rgba(255, 122, 24, 0.16);
+}
+
+.featuredProjectCard:hover {
+  box-shadow: 0 0 3rem rgba(255, 122, 24, 0.28);
+}
+
+.featuredLabel {
+  display: inline-block;
+  margin-bottom: 1.2rem;
+  padding: 0.5rem 1rem;
+  border-radius: 2rem;
+  background: rgba(255, 122, 24, 0.18);
+  color: var(--orange);
+  font-size: 1.2rem;
+  font-weight: 700;
+  letter-spacing: 0.04em;
+  text-transform: uppercase;
+}
+
+.projectLinkHint {
+  display: inline-flex;
+  align-items: center;
+  gap: 0.6rem;
+  margin-top: 2rem;
+  color: var(--orange);
+  font-weight: 700;
 }
 
 .category {

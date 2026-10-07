@@ -16,90 +16,88 @@ export const portfolioData = {
 
   cta: {
     projects: "#projects",
-    experience: "#experience",
   },
   education: [
-  {
-    degree: "B.Sc. Computer Science",
-    institution: "Kakatiya University",
-    year: "2001 - 2003",
-  },
-],
+    {
+      degree: "B.Sc. Computer Science",
+      institution: "Kakatiya University",
+      year: "2001 - 2003",
+    },
+  ],
 
-projects: [
-  {
-    title: "Mutual Fund Platform",
-    category: "Fintech Product",
-    technologies: [
-      "React.js",
-      "Redux Toolkit",
-      "REST APIs",
-    ],
-    description:
-      "Developed transaction-heavy modules including SIP, STP, SWP, purchase flows, portfolio management, and statement generation.",
-  },
+  projects: [
+    {
+      title: "Mutual Fund Platform (React 17)",
+      category: "Fintech Product",
+      technologies: ["React.js", "Redux Toolkit", "REST APIs"],
+      link: "https://online.licmf.com/",
 
-  {
-    title: "Book Your Timesheet (BYT)",
-    category: "SaaS Product",
-    technologies: [
-      "React.js",
-      "Node.js",
-      "MongoDB",
-    ],
-    description:
-      "Built employee onboarding, project tracking, billing automation, invoice generation, and time tracking workflows.",
-  },
+      description:
+        "Developed transaction-heavy modules including SIP, STP, SWP, purchase flows, portfolio management, and statement generation.",
+    },
 
-  {
-    title: "Car & General",
-    category: "Dealer Management System",
-    technologies: [
-      "Next.js",
-      "SSR",
-      "i18n",
-    ],
-    description:
-      "Developed spare parts ordering, billing, order tracking, and multilingual dealer management features.",
-  },
-],
+    {
+      title: "SchoolRefine App (MERN)",
+      category: "Independent Project",
+      description:
+        "A full-stack school management platform built with React.js, Node.js, Express.js, and MongoDB, covering student management, academics, fees, report cards, role-based access, and school-wise data isolation.",
+      technologies: [
+        "React.js",
+        "Node.js",
+        "Express.js",
+        "MongoDB",
+        "Redux Toolkit",
+        "REST APIs",
+        "JWT",
+      ],
+      link: "https://eschool-frontend.vercel.app/app/login",
+    },
+
+    {
+      title: "Car & General (Next v12)",
+      category: "Dealer Management System",
+      technologies: ["Next.js", "SSR", "i18n"],
+      description:
+        "Developed spare parts ordering, billing, order tracking, and multilingual dealer management features.",
+    },
+  ],
 
   experience: [
-  {
-    company: "Webile Apps (India) Pvt Ltd",
-    duration: "Aug 2024 - May 2026",
-    project: "Mutual Fund Platform (Fintech)",
-    points: [
-      "Developed transaction-heavy modules including SIP, STP, SWP and purchase flows.",
-      "Built reusable React components improving development speed and consistency.",
-      "Implemented Redux Toolkit for efficient state management.",
-      "Integrated REST APIs for portfolios, transactions and statements.",
-      "Collaborated with backend and product teams to deliver scalable financial workflows.",
-    ],
-  },
+    {
+      company: "Webile Apps (India) Pvt Ltd",
+      duration: "Aug 2024 - May 2026",
+      project: "Mutual Fund Platform (Fintech)",
+      points: [
+        "Developed transaction-heavy modules including SIP, STP, SWP and purchase flows.",
+        "Built reusable React components improving development speed and consistency.",
+        "Implemented Redux Toolkit for efficient state management.",
+        "Integrated REST APIs for portfolios, transactions and statements.",
+        "Collaborated with backend and product teams to deliver scalable financial workflows.",
+      ],
+    },
 
-  {
-    company: "GAC Digital Pvt Ltd",
-    duration: "Apr 2021 - Jan 2024",
-    project: "GAC Portal & BYT SaaS Platform",
-    points: [
-      "Developed modules for timesheets, payslips and employee operations.",
-      "Migrated legacy class components to React Hooks.",
-      "Built onboarding, project tracking and billing automation features.",
-      "Implemented invoice generation and time tracking workflows.",
-    ],
-  },
+    {
+      company: "GAC Digital Pvt Ltd",
+      duration: "Apr 2021 - Jan 2024",
+      project: "GAC Portal & BYT SaaS Platform",
+      points: [
+        "Developed modules for timesheets, payslips and employee operations.",
+        "Migrated legacy class components to React Hooks.",
+        "Built onboarding, project tracking and billing automation features.",
+        "Implemented invoice generation and time tracking workflows.",
+      ],
+    },
 
-  {
-    company: "Car & General (TVS Nigeria)",
-    duration: "Dec 2022 - Mar 2023",
-    project: "Dealer Management System",
-    points: [
-      "Built application using Next.js with SSR.",
-      "Implemented multilingual support using i18n.",
-      "Developed order tracking and invoice generation modules.",
-      "Integrated backend APIs for seamless data flow.",
-    ],
-  },
-],
+    {
+      company: "Car & General (TVS Nigeria)",
+      duration: "Dec 2022 - Mar 2023",
+      project: "Dealer Management System",
+      points: [
+        "Built application using Next.js with SSR.",
+        "Implemented multilingual support using i18n.",
+        "Developed order tracking and invoice generation modules.",
+        "Integrated backend APIs for seamless data flow.",
+      ],
+    },
+  ],
 };

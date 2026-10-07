@@ -2,13 +2,28 @@
   background: var(--dark);
 }
 
+.techCategories {
+  display: grid;
+  gap: 3.5rem;
+}
+
+.techCategory {
+  min-width: 0;
+}
+
+.categoryTitle {
+  margin-bottom: 1.5rem;
+  color: var(--white);
+  font-size: 1.8rem;
+}
+
 .techGrid {
   display: grid;
 
   grid-template-columns:
     repeat(auto-fit, minmax(180px, 1fr));
 
-  gap: 2rem;
+  gap: 1.5rem;
 }
 
 .techCard {
@@ -36,7 +51,7 @@
   margin-bottom: 1.5rem;
 }
 
-.techCard h3 {
+.techCard h4 {
   font-size: 1.6rem;
   color: var(--white);
 }
