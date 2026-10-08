@@ -4,15 +4,14 @@
 
 .projectsGrid {
   display: grid;
-
-  grid-template-columns:
-    repeat(auto-fit, minmax(320px, 1fr));
-
+  grid-template-columns: repeat(auto-fit, minmax(min(100%, 32rem), 1fr));
   gap: 2rem;
+  min-width: 0;
 }
 
 .projectCard {
   display: block;
+  min-width: 0;
   background: var(--gray-9);
 
   padding: 2.5rem;
@@ -101,4 +100,10 @@
   border-radius: 2rem;
 
   font-size: 1.2rem;
+}
+
+@media (max-width: 480px) {
+  .projectCard {
+    padding: 2rem;
+  }
 }

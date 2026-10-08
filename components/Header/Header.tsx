@@ -2,7 +2,7 @@
 
 import Link from "next/link";
 import { useCallback, useEffect, useRef, useState } from "react";
-import { FaEnvelope, FaPhoneAlt } from "react-icons/fa";
+import { FaEnvelope } from "react-icons/fa";
 import { FaBars, FaXmark } from "react-icons/fa6";
 import SectionLink from "@/components/SectionLink/SectionLink";
 import styles from "./Header.module.css";
@@ -124,26 +124,11 @@ export default function Header() {
           className={`container ${styles.navbar}`}
           aria-label="Main navigation"
         >
-          <div className={styles.logoSection}>
-            <div className={styles.logo}>
-              <Link
-                href="/"
-                className={styles.email}
-                aria-label="Go to home page"
-              >
-                <FaEnvelope aria-hidden="true" />
-                srikar.ravoori@gmail.com
-              </Link>
-            </div>
-
-            <a
-              href="tel:+919948800149"
-              className={styles.contact}
-              aria-label="Call +91 99488 00149"
-            >
-              <FaPhoneAlt aria-hidden="true" />
-              <span>+91 99488 00149</span>
-            </a>
+          <div className={styles.brand}>
+            <Link href="/" aria-label="Go to home page">
+              <FaEnvelope aria-hidden="true" />
+              <span>srikar.ravoori@gmail.com</span>
+            </Link>
           </div>
 
           <button

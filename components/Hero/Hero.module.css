@@ -85,7 +85,7 @@
 
 .btnPrimary {
   background: var(--orange);
-  color: var(--dark);
+  color: var(--white);
 }
 
 .btnPrimary:hover {
