@@ -14,22 +14,32 @@
 
 
 
-.brand {
+.contacts {
+  display: flex;
+  align-items: center;
+  gap: 1.6rem;
+}
+
+.brand,
+.phone {
   font-size: 1.6rem;
   font-weight: 600;
 }
 
-.brand a {
+.brand a,
+.phone {
   display: inline-flex;
   align-items: center;
   gap: 0.7rem;
 }
 
-.brand svg {
+.brand svg,
+.phone svg {
   flex: 0 0 auto;
 }
 
-.brand a:hover {
+.brand a:hover,
+.phone:hover {
   color: var(--white);
 }
 
@@ -88,8 +98,16 @@
 }
 
 @media (max-width: 768px) {
+  .contacts {
+    min-width: 0;
+  }
+
   .brand {
     font-size: 1.3rem;
+  }
+
+  .phone {
+    display: none;
   }
 
   .hamburger {
